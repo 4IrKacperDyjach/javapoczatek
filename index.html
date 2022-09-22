@@ -19,7 +19,24 @@
    <script>
     let a = prompt("podaj liczbę 1");
     let b = prompt("podaj liczbę 2");
-    let wynik = (parseFloat(a) + parseFloat(b));
+    let znak = prompt("podaj znak działania");
+    let wynik;
+    if (znak==='+'){
+      wynik = parseInt(a) + parseInt(b)
+    }else if (znak==='-'){
+       wynik = parseInt(a) - parseInt(b)
+    } else if(znak==='*')
+    {
+        wynik = parseInt(a) * parseInt(b)
+    }else if(znak==='/'){
+        wynik = parseInt(a) / parseInt(b)
+    }
+
+    
+    
+    
+    
+    
     console.log(wynik); 
     alert("wynik: " + wynik);
     document.write("wynik: " + wynik );
